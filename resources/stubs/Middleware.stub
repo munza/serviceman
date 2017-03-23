@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Services\{{ service }};
+
+use League\Tactician\Middleware;
+
+class {{ name }} implements Middleware
+{
+    /**
+     * Execute middleware opertaion.
+
+     * @param  mixed $command
+     * @param  callable $next
+     * @return mixed
+     */
+    public function execute($command, callable $next)
+    {
+        //
+
+        return $next($command);
+    }
+}

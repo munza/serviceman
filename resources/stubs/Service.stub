@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Services;
+
+use Munza\Serviceman\Support\Service;
+
+class {{ name }} extends Service
+{
+    /**
+     * Bind commands with the handlers.
+
+     * @var array
+     */
+    protected $handlers = [
+        //
+    ];
+
+    /**
+     * List of common middleware for commands.
+
+     * @var array
+     */
+    protected $middleware = [
+        //
+    ];
+}

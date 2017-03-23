@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Services\{{ service }};
+
+use App\Services\{{ service }}\{{ command-name }};
+
+class {{ name }}
+{
+    /**
+     * Handle command operation.
+
+     * @param  \App\Services\{{ service }}\{{ command-name }} $command
+     * @return mixed
+     */
+    public function handle({{ command-name }} $command)
+    {
+        //
+    }
+}
