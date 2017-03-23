@@ -14,15 +14,17 @@ Set `minimum-stability` to `dev` in the `composer.json` file
 To install this update your `composer.json` file to require
 ```json
     "require": {
+        "joselfonseca/laravel-tactician": "^0.3.*",
         "munza/serviceman" : "0.9.*"
     }
 ```
-Or run `composer require munza/serviceman` from the command line.
+Or run `composer require munza/serviceman joselfonseca/laravel-tactician` from the command line.
 
 Once the dependencies have been downloaded, add the service provider to your `config/app.php` file
 ```php
     'providers' => [
         ...
+        Joselfonseca\LaravelTactician\Providers\LaravelTacticianServiceProvider::class,
         Munza\Serviceman\ServicemanServiceProvider::class,
         ...
     ]
